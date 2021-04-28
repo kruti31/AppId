@@ -1,0 +1,43 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          ibmcloud:
+            client-name: Krutika Parse
+            client-id: c1767768-f148-4f87-b35b-d1820d4a35d5
+            client-secret: YjIxM2M5MGUtZDJiZi00NDUzLWIwNjEtMzIyMjY0YThmNWM3
+            scope:
+             - openid
+            authorization-grant-type: authorization_code
+        provider:
+          ibmcloud:
+            issuer-uri: https://eu-gb.appid.cloud.ibm.com/oauth/v4/59f1a7a4-fa58-4a6d-ae6f-bf244786d945
+            authorization-uri: https://eu-gb.appid.cloud.ibm.com/oauth/v4/59f1a7a4-fa58-4a6d-ae6f-bf244786d945/authorization
+            token-uri: https://eu-gb.appid.cloud.ibm.com/oauth/v4/59f1a7a4-fa58-4a6d-ae6f-bf244786d945/token
+            jwk-set-uri: https://eu-gb.appid.cloud.ibm.com/oauth/v4/59f1a7a4-fa58-4a6d-ae6f-bf244786d945/token
+            user-info-uri: https://eu-gb.appid.cloud.ibm.com/oauth/v4/59f1a7a4-fa58-4a6d-ae6f-bf244786d945/userinfo
+            user-name-attribute: name
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          appid:
+#            clientId: <<clientId>>
+#            clientSecret: <<clientSecret>>
+#            region: <<region>>
+#            tenantId: <<tenantId>>
+
+# If you are not sure of the region and tenantId use the below configuration
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          appid:
+#            clientId: aa0650f1-28a2-4bda-809f-ba9341d51c70
+#            clientSecret: NDQyMjgyMWMtZWU4Yy00MGU1LTliZGQtYjdmMmM5MjY2ZTQ3
+#            issuerUri: https://eu-gb.appid.cloud.ibm.com/oauth/v4/59f1a7a4-fa58-4a6d-ae6f-bf244786d945
+
